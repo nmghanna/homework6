@@ -38,16 +38,17 @@ document.querySelector("#skip").addEventListener("click", function() {
 
 document.querySelector("#mute").addEventListener("click", function() {
 	if (video.muted) {
+		video.muted = false;
+		video.innerHTML = "Mute";
+		console.log("Unmute");
+		
+	}
+	else {
 		video.muted = true;
 		video.innerHTML = "Unmute";
 		console.log("Mute");
 	}
-  	else {
-		video.muted = false;
-		video.innerHTML = "Mute";
-		console.log("Unmute");
-  	}
-	
+  
 });
 
 document.querySelector("#volumeSlider").addEventListener("click", function() {
