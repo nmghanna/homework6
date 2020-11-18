@@ -39,12 +39,12 @@ document.querySelector("#skip").addEventListener("click", function() {
 document.querySelector("#mute").addEventListener("click", function() {
 	if (video.muted) {
 		video.muted = true;
-		video.innerHTML = "Mute";
+		video.innerHTML = "Unmute";
 		console.log("Mute");
 	}
   	else {
 		video.muted = false;
-		video.innerHTML = "Unmute";
+		video.innerHTML = "Mute";
 		console.log("Unmute");
   	}
 	
@@ -53,8 +53,9 @@ document.querySelector("#mute").addEventListener("click", function() {
 document.querySelector("#volumeSlider").addEventListener("click", function() {
 	console.log(video.volume);
 	volume.innerHTML = (volumeSlider.value);
-	console.log(volume*100);
+
 });
+
 
 document.querySelector("#old").addEventListener("click", function() {
 	console.log("Old School");
