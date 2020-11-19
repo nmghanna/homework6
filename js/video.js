@@ -42,13 +42,13 @@ document.querySelector("#skip").addEventListener("click", function() {
 document.querySelector("#mute").addEventListener("click", function() {
 	if (video.muted) {
 		video.muted = false;
-		video.innerHTML = "Mute";
+		this.innerHTML = "Mute";
 		console.log("Unmute");
 		
 	}
 	else {
 		video.muted = true;
-		video.innerHTML = "Unmute";
+		this.innerHTML = "Unmute";
 		console.log("Mute");
 	}
   
